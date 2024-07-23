@@ -1,6 +1,6 @@
 # 🎨 Palette-based Color Harmonization via Color Naming
 
-*[Danna Xue](https://scholar.google.com.hk/citations?user=I34UZFIAAAAJ&hl=zh-CN)*<sup>1,2</sup>, *[Javier Vazquez-Corral](https://www.jvazquez-corral.net/)*<sup>2</sup>, *[Luis Herranz](https://scholar.google.com/citations?user=TIUdKu4AAAAJ&hl=en)*<sup>3</sup>, *[Yanning Zhang]*<sup>1</sup> and *[Michael S. Brown](http://www.cse.yorku.ca/~mbrown/)*<sup>4</sup>
+*[Danna Xue](https://scholar.google.com.hk/citations?user=I34UZFIAAAAJ&hl=zh-CN)*<sup>1,2</sup>, *[Javier Vazquez-Corral](https://www.jvazquez-corral.net/)*<sup>2</sup>, *[Luis Herranz](https://scholar.google.com/citations?user=TIUdKu4AAAAJ&hl=en)*<sup>3</sup>, *[Yanning Zhang](https://scholar.google.com/citations?user=-wzlS7QAAAAJ&hl=zh-CN)*<sup>1</sup> and *[Michael S. Brown](http://www.cse.yorku.ca/~mbrown/)*<sup>4</sup>
 
 
 <sup>1</sup>Northwestern Polytechnical University
@@ -19,11 +19,11 @@ Repo for the paper:
 
 ## Dataset:
 
-- MIT-Adobe 5K dataset: [Download the .DNG files](https://data.csail.mit.edu/graphics/fivek/)
+- [MIT-Adobe 5K dataset](https://data.csail.mit.edu/graphics/fivek/): Download the .DNG files
 
 We used the Camera Raw tool in Photoshop, which preprocesses image colors based on the metadata of the raw images, automatically selecting configuration files such as ACR 4.4, ACR 4.6, or Adobe Standard depending on the camera model. This preprocessing method produces images with more vibrant colors, consistent with the sRGB images saved directly from camera shots. We test on the last 500 images.
 
-- PPR10K dataset: [Download the source .tif files](https://github.com/csjliang/PPR10K?tab=readme-ov-file)
+- [PPR10K dataset](https://github.com/csjliang/PPR10K?tab=readme-ov-file): Download the source .tif files
 
 We use the validation split of the source 360p 16bit sRGB images and convert them to 8 bits.
 
@@ -34,7 +34,8 @@ We use the validation split of the source 360p 16bit sRGB images and convert the
 ### Run experiment:
 
 - How to run the code:
-``` python main.py --data_dir "your_test_image_folder" --save_dir "your_results_folder"
+```
+python main.py --data_dir "your_test_image_folder" --save_dir "your_results_folder"
 ```
 
 
